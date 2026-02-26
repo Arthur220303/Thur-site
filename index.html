@@ -4,87 +4,150 @@
 <meta charset="UTF-8">
 <title>Thurtech</title>
 
-<!-- Fonte moderna -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-/* Reset simples */
-*{margin:0;padding:0;box-sizing:border-box;}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
 background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-font-family: 'Roboto', sans-serif;
+background-size:200% 200%;
+animation:bgMove 20s ease infinite;
+
 color:white;
-overflow:hidden;
+font-family:'Roboto', sans-serif;
+text-align:center;
 }
 
 .container{
-animation: fadeIn 1.5s ease-in-out;
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+animation:fadeIn 1.5s ease;
 }
 
 h1{
 font-size:90px;
 letter-spacing:12px;
 margin-bottom:20px;
-text-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+text-shadow:0 5px 20px rgba(0,0,0,0.5);
 }
 
 p{
 opacity:0.85;
-margin-bottom:50px;
 font-size:20px;
+margin-bottom:40px;
 }
 
 button{
-padding:18px 60px;
-font-size:24px;
+padding:16px 50px;
+font-size:22px;
 border:none;
 border-radius:25px;
 cursor:pointer;
-background: linear-gradient(45deg,#00c3ff,#0066cc);
-color:white;
 font-weight:bold;
 transition:0.4s;
-box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+background:linear-gradient(45deg,#00c3ff,#0066cc);
+color:white;
+box-shadow:0 8px 25px rgba(0,0,0,0.4);
 }
 
 button:hover{
-transform:scale(1.1) rotate(-1deg);
-box-shadow: 0 12px 30px rgba(0,0,0,0.5);
-background: linear-gradient(45deg,#0066cc,#00c3ff);
+transform:scale(1.1);
 }
 
+/* Caixa de conteúdo */
+
+.box{
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:20px;
+margin-top:40px;
+backdrop-filter:blur(10px);
+text-align:left;
+}
+
+/* Animações */
+
 @keyframes fadeIn{
-from{opacity:0; transform:translateY(50px);}
+from{opacity:0; transform:translateY(40px);}
 to{opacity:1; transform:translateY(0);}
 }
 
-/* Fundo animado */
 @keyframes bgMove{
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
 }
 
-body{
-background-size: 200% 200%;
-animation: bgMove 20s ease infinite;
-}
 </style>
+
 </head>
 
 <body>
+
 <div class="container">
+
 <h1>THURTECH</h1>
-<p>Desenvolvimento de sites simples, modernos e confiáveis</p>
-<a href="servicos.html">
-<button>ENTRAR</button>
+
+<p>Desenvolvimento de sites modernos e personalizados para seu projeto</p>
+
+<div class="box">
+
+<h2>📌 Como pedir seu site</h2>
+
+<p>
+Entre em contato pelo 1.<br>
+Explique como você deseja o site.<br>
+Aguarde orçamento e início do desenvolvimento.
+</p>
+
+<br>
+
+<h2>💻 O que oferecemos</h2>
+
+<p>
+• Desenvolvimento de sites modernos e personalizados<br>
+• Criação de páginas para projetos e estudos<br>
+• Design simples, elegante e funcional<br>
+• Integração com redes sociais<br>
+• Ajustes básicos e suporte inicial
+</p>
+
+<br>
+
+<h2>📌 Sobre o serviço</h2>
+
+<p>
+A 2 desenvolve sites simples, modernos e organizados para quem deseja presença online.
+
+Nosso objetivo é transformar sua ideia em um site funcional, bonito e confiável.
+</p>
+
+<br>
+
+<h2>📞 Contato</h2>
+
+<a href="https://wa.me/5548996045175">
+<button>WhatsApp</button>
 </a>
+
+<br><br>
+
+<h2>📸 Instagram</h2>
+
+<a id="instagramLink" href="#">
+<button>Instagram</button>
+</a>
+
 </div>
+
+</div>
+
 </body>
 </html>
