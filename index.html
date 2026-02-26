@@ -2,150 +2,54 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Thurtech</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<title>ThurTech - Criação de Sites</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-background-size:200% 200%;
-animation:bgMove 20s ease infinite;
-
-color:white;
-font-family:'Roboto', sans-serif;
-text-align:center;
+    margin:0;
+    font-family: Arial;
+    background: linear-gradient(45deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    text-align:center;
 }
 
 .container{
-max-width:900px;
-margin:auto;
-padding:60px 20px;
-animation:fadeIn 1.5s ease;
-}
-
-h1{
-font-size:90px;
-letter-spacing:12px;
-margin-bottom:20px;
-text-shadow:0 5px 20px rgba(0,0,0,0.5);
-}
-
-p{
-opacity:0.85;
-font-size:20px;
-margin-bottom:40px;
+    padding:120px 20px;
 }
 
 button{
-padding:16px 50px;
-font-size:22px;
-border:none;
-border-radius:25px;
-cursor:pointer;
-font-weight:bold;
-transition:0.4s;
-background:linear-gradient(45deg,#00c3ff,#0066cc);
-color:white;
-box-shadow:0 8px 25px rgba(0,0,0,0.4);
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    background:#00c6ff;
+    color:white;
+    cursor:pointer;
 }
 
 button:hover{
-transform:scale(1.1);
-}
-
-/* Caixa de conteúdo */
-
-.box{
-background:rgba(255,255,255,0.08);
-padding:30px;
-border-radius:20px;
-margin-top:40px;
-backdrop-filter:blur(10px);
-text-align:left;
-}
-
-/* Animações */
-
-@keyframes fadeIn{
-from{opacity:0; transform:translateY(40px);}
-to{opacity:1; transform:translateY(0);}
-}
-
-@keyframes bgMove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
+    background:#0072ff;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>THURTECH</h1>
+<h1>ThurTech</h1>
 
-<p>Desenvolvimento de sites modernos e personalizados para seu projeto</p>
+<p>Crio sites simples sob encomenda</p>
 
-<div class="box">
-
-<h2>📌 Como pedir seu site</h2>
-
-<p>
-Entre em contato pelo 1.<br>
-Explique como você deseja o site.<br>
-Aguarde orçamento e início do desenvolvimento.
-</p>
+<p>Se quiser um site, entre em contato.</p>
 
 <br>
 
-<h2>💻 O que oferecemos</h2>
-
-<p>
-• Desenvolvimento de sites modernos e personalizados<br>
-• Criação de páginas para projetos e estudos<br>
-• Design simples, elegante e funcional<br>
-• Integração com redes sociais<br>
-• Ajustes básicos e suporte inicial
-</p>
-
-<br>
-
-<h2>📌 Sobre o serviço</h2>
-
-<p>
-A 2 desenvolve sites simples, modernos e organizados para quem deseja presença online.
-
-Nosso objetivo é transformar sua ideia em um site funcional, bonito e confiável.
-</p>
-
-<br>
-
-<h2>📞 Contato</h2>
-
-<a href="https://wa.me/5548996045175">
-<button>WhatsApp</button>
-</a>
-
-<br><br>
-
-<h2>📸 Instagram</h2>
-
-<a id="instagramLink" href="#">
-<button>Instagram</button>
-</a>
-
-</div>
+<button onclick="window.open('https://wa.me/SEUNUMERO')">
+Solicitar Site
+</button>
 
 </div>
 
