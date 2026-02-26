@@ -2,86 +2,53 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>ThurTech</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serviços</title>
 
 <style>
-
-/* RESET */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* BODY */
 body{
-    background: linear-gradient(45deg,#0f2027,#203a43,#2c5364);
-    color:white;
-}
-
-/* NAVBAR */
-nav{
-    width:100%;
-    padding:20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(0,0,0,0.2);
-    backdrop-filter: blur(8px);
-}
-
-nav h2{
-    font-size:28px;
+text-align:center;
+padding:40px;
+color:white;
+background:linear-gradient(45deg,#0f2027,#203a43,#2c5364);
+min-height:100vh;
+font-family:Arial, sans-serif;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:15px;
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
 }
 
-/* CONTEÚDO */
 .container{
-    height:85vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
+max-width:800px;
+margin:auto;
+padding:20px;
 }
 
-h1{
-    font-size:70px;
-    margin-bottom:20px;
+.box{
+background:rgba(255,255,255,0.1);
+padding:20px;
+margin:20px 0;
+border-radius:15px;
+backdrop-filter:blur(6px);
 }
 
-p{
-    font-size:22px;
-    opacity:0.9;
-    margin-bottom:40px;
-}
-
-/* BOTÃO */
 button{
-    padding:16px 40px;
-    font-size:18px;
-    border:none;
-    border-radius:40px;
-    background:#00c6ff;
-    color:white;
-    cursor:pointer;
-    transition:0.3s;
+padding:12px 20px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+background:#00c3ff;
+color:white;
+font-weight:bold;
 }
 
 button:hover{
-    background:#0072ff;
-    transform:scale(1.08);
+background:#0099cc;
 }
-
 </style>
 
 </head>
@@ -89,24 +56,55 @@ button:hover{
 <body>
 
 <nav>
-<h2>ThurTech</h2>
-
-<div>
-<a href="index.html">Home</a>
-<a href="sobre.html">Sobre</a>
+<a href="index.html">Home</a> |
+<a href="sobre.html">Sobre</a> |
 <a href="servicos.html">Serviços</a>
-</div>
 </nav>
 
 <div class="container">
 
-<h1>ThurTech</h1>
+<h1>Serviços</h1>
 
-<p>Desenvolvendo tecnologia simples e gratuita</p>
+<div class="box">
+<h2>✨ Como pedir seu site</h2>
 
-<button onclick="alert('Bem-vindo à ThurTech!')">
-Entrar
-</button>
+<p>
+1. Entre em contato pelo WhatsApp<br>
+2. Explique como você quer o site<br>
+3. Aguarde o orçamento e desenvolvimento<br>
+4. Receba seu site pronto
+</p>
+</div>
+
+<div class="box">
+<h2>💼 O que oferecemos</h2>
+
+<p>
+✔ Criação de sites simples<br>
+✔ Landing pages<br>
+✔ Sites para estudo ou projeto pessoal<br>
+✔ Ajustes básicos de design
+</p>
+</div>
+
+<div class="box">
+<h2>📌 Sobre o serviço</h2>
+
+<p>
+Criamos sites simples, modernos e organizados para quem deseja começar na internet.
+Ideal para projetos, estudos ou pequenas apresentações online.
+</p>
+</div>
+
+<h2>📸 Fale conosco</h2>
+
+<a href="https://wa.me/5548996045175" target="_blank">
+<button>WhatsApp</button>
+</a>
+
+<a href="SEU_LINK_DO_INSTAGRAM" target="_blank">
+<button>Instagram</button>
+</a>
 
 </div>
 
