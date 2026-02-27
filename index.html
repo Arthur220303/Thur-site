@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Thurtech - Soluções Digitais. Criação de sites e serviços digitais.">
-  <title>Thurtech | Soluções Digitais</title>
+  <title>THURTECH</title>
 
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
@@ -15,127 +13,130 @@
       padding: 0;
       box-sizing: border-box;
       font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
     }
 
     body {
-      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      background: #0f0f0f;
       color: white;
-      text-align: center;
     }
 
     header {
-      padding: 20px;
-      background: #000;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      padding: 20px 40px;
+      background: #111;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
     }
 
-    /* LOGO NEON */
     .logo {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: bold;
-      color: #00ff88;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      text-shadow:
-        0 0 5px #00ff88,
-        0 0 10px #00ff88,
-        0 0 20px #00ff88,
-        0 0 40px #00cc6a;
-      animation: brilho 1.5s infinite alternate;
-    }
-
-    @keyframes brilho {
-      from {
-        text-shadow:
-          0 0 5px #00ff88,
-          0 0 10px #00ff88,
-          0 0 20px #00ff88,
-          0 0 40px #00cc6a;
-      }
-      to {
-        text-shadow:
-          0 0 10px #00ff88,
-          0 0 20px #00ff88,
-          0 0 30px #00ff88,
-          0 0 60px #00cc6a;
-      }
+      color: #00f2ff;
+      text-shadow: 0 0 5px #00f2ff,
+                   0 0 10px #00f2ff,
+                   0 0 20px #00f2ff,
+                   0 0 40px #00f2ff;
+      cursor: pointer;
     }
 
     nav a {
-      color: white;
+      margin-left: 25px;
       text-decoration: none;
-      margin-left: 20px;
-      font-size: 15px;
+      color: white;
+      font-weight: bold;
       transition: 0.3s;
     }
 
-    nav a i {
-      margin-right: 6px;
+    nav a:hover {
+      color: #00f2ff;
     }
 
-    nav a:hover {
-      color: #00ff88;
+    section {
+      padding: 120px 40px;
+      min-height: 100vh;
     }
 
     .hero {
-      padding: 80px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
-    .hero h2 {
-      font-size: 32px;
+    .hero h1 {
+      font-size: 42px;
       margin-bottom: 20px;
     }
 
     .hero p {
-      max-width: 600px;
-      margin: auto;
+      font-size: 18px;
       margin-bottom: 30px;
+      max-width: 600px;
       color: #ccc;
-      line-height: 1.6;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #00ff88;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
+    .btn-whats {
+      background: #25D366;
+      padding: 15px 30px;
       border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 15px #25D366;
+    }
+
+    .btn-whats:hover {
+      transform: scale(1.05);
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
       transition: 0.3s;
     }
 
-    .btn:hover {
-      background: #00cc6a;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #00f2ff;
     }
 
     footer {
-      margin-top: 80px;
-      padding: 20px;
-      background: #000;
-      font-size: 14px;
-      color: #888;
+      background: #111;
+      text-align: center;
+      padding: 30px;
     }
 
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-      }
+    .social {
+      margin-top: 15px;
+    }
 
-      nav {
-        margin-top: 10px;
-      }
+    .social a {
+      margin: 0 10px;
+      font-size: 22px;
+      color: white;
+      transition: 0.3s;
+    }
 
-      nav a {
-        margin: 0 10px;
-      }
-
-      .hero h2 {
-        font-size: 24px;
-      }
+    .social a:hover {
+      color: #00f2ff;
     }
   </style>
 </head>
@@ -143,32 +144,70 @@
 <body>
 
   <header>
-    <div class="logo">THURTECH</div>
+    <div class="logo" onclick="window.scrollTo(0,0)">THURTECH</div>
     <nav>
-      <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-instagram"></i>Instagram
-      </a>
-
-      <a href="https://wa.me/5548996045175?text=Olá,%20vim%20pelo%20site%20da%20Thurtech%20e%20quero%20um%20orçamento." target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-whatsapp"></i>WhatsApp
-      </a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como">Como Funciona</a>
+      <a href="https://wa.me/5548996045175" target="_blank">Pedir Agora</a>
     </nav>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
-    <h2>Transformando Ideias em Soluções Digitais</h2>
-    <p>
-      Criamos sites modernos, artes para redes sociais e soluções digitais
-      que ajudam sua marca a crescer no ambiente online.
-    </p>
-    <a href="https://wa.me/5548996045175?text=Olá,%20vim%20pelo%20site%20da%20Thurtech%20e%20quero%20um%20orçamento." 
-       class="btn" target="_blank">
+    <h1>Transformamos sua ideia em presença digital</h1>
+    <p>Sites modernos, artes profissionais e soluções digitais 
+    para você crescer na internet com autoridade.</p>
+
+    <a class="btn-whats" 
+       href="https://wa.me/5548996045175" 
+       target="_blank">
        Solicitar Orçamento
     </a>
   </section>
 
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <h1>O que Fazemos</h1>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Criação de Sites</h3>
+        <p>Sites rápidos, modernos e responsivos.</p>
+      </div>
+
+      <div class="card">
+        <h3>Landing Pages</h3>
+        <p>Páginas focadas em conversão e vendas.</p>
+      </div>
+
+      <div class="card">
+        <h3>Artes para Redes</h3>
+        <p>Design profissional para destacar seu negócio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como">
+    <h1>Como Funciona</h1>
+    <p style="margin-top:20px; max-width:600px;">
+      Clique em "Solicitar Orçamento", envie sua ideia no WhatsApp 
+      e receba rapidamente prazo e valor. Simples, direto e profissional.
+    </p>
+  </section>
+
   <footer>
-    © 2026 Thurtech - Todos os direitos reservados
+    <p>© 2026 THURTECH - Todos os direitos reservados</p>
+
+    <div class="social">
+      <a href="https://wa.me/5548996045175" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
   </footer>
 
 </body>
