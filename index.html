@@ -1,246 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THURTECH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THURTECH</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-    }
+<style>
 
-    body {
-      background: #0f0f0f;
-      color: white;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
 
-    /* ===== MENU ===== */
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #111;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: center;
-      z-index: 1000;
-    }
+body{
+background:#0f0f0f;
+color:white;
+}
 
-    nav {
-      display: flex;
-      gap: 20px;
-    }
+/* MENU */
 
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-size: 14px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#111;
+padding:15px;
+display:flex;
+justify-content:center;
+z-index:1000;
+}
 
-    nav a:hover {
-      color: #00f2ff;
-    }
+nav{
+display:flex;
+gap:20px;
+}
 
-    /* ===== HERO ===== */
-    .hero {
-      padding-top: 120px;
-      padding-bottom: 60px;
-      text-align: center;
-    }
+nav a{
+text-decoration:none;
+color:white;
+font-size:14px;
+font-weight:bold;
+transition:.3s;
+}
 
-    .logo-hero {
-      font-size: 34px;
-      font-weight: bold;
-      color: #00f2ff;
-      text-shadow: 0 0 15px #00f2ff;
-      margin-bottom: 20px;
-    }
+nav a:hover{
+color:#00f2ff;
+}
 
-    .hero h1 {
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
+/* HERO */
 
-    .hero p {
-      font-size: 16px;
-      max-width: 500px;
-      margin: 0 auto 25px;
-      color: #ccc;
-    }
+.hero{
+padding-top:140px;
+padding-bottom:70px;
+text-align:center;
+}
 
-    .btn-whats {
-      background: #25D366;
-      padding: 14px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: 0.3s;
-      box-shadow: 0 0 15px #25D366;
-      display: inline-block;
-    }
+.logo-hero{
+font-size:34px;
+font-weight:bold;
+color:#00f2ff;
+text-shadow:0 0 15px #00f2ff;
+margin-bottom:20px;
+}
 
-    .btn-whats:hover {
-      transform: scale(1.05);
-    }
+.hero h1{
+font-size:30px;
+margin-bottom:15px;
+}
 
-    /* ===== SEÇÕES ===== */
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
+.hero p{
+font-size:16px;
+max-width:500px;
+margin:0 auto 25px;
+color:#ccc;
+}
 
-    .cards {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 30px;
-    }
+/* BOTÃO */
 
-    .card {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      width: 240px;
-      transition: 0.3s;
-    }
+.btn-whats{
+background:#25D366;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:.3s;
+box-shadow:0 0 15px #25D366;
+display:inline-block;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 15px #00f2ff;
-    }
+.btn-whats:hover{
+transform:scale(1.05);
+}
 
-    /* ===== FOOTER ===== */
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 25px;
-      margin-top: 40px;
-    }
+/* SEÇÕES */
 
-    .social {
-      margin-top: 10px;
-    }
+section{
+padding:60px 20px;
+text-align:center;
+}
 
-    .social a {
-      margin: 0 10px;
-      font-size: 22px;
-      color: white;
-      transition: 0.3s;
-    }
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:30px;
+}
 
-    .social a:hover {
-      color: #00f2ff;
-    }
+.card{
+background:#1a1a1a;
+padding:20px;
+border-radius:10px;
+width:240px;
+transition:.3s;
+text-align:center;
+}
 
-    /* ===== MOBILE ===== */
-    @media (max-width: 600px) {
-      nav {
-        gap: 12px;
-      }
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 15px #00f2ff;
+}
 
-      nav a {
-        font-size: 12px;
-      }
+/* FOOTER */
 
-      .hero h1 {
-        font-size: 24px;
-      }
+footer{
+background:#111;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
 
-      .logo-hero {
-        font-size: 28px;
-      }
-    }
+.social{
+margin-top:10px;
+}
 
-  </style>
+.social a{
+margin:0 10px;
+font-size:22px;
+color:white;
+transition:.3s;
+}
+
+.social a:hover{
+color:#00f2ff;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+nav{
+gap:12px;
+}
+
+nav a{
+font-size:12px;
+}
+
+.hero h1{
+font-size:24px;
+}
+
+.logo-hero{
+font-size:28px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <!-- MENU -->
-  <header>
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#como">Como Funciona</a>
-      <a href="https://wa.me/5548996045175" target="_blank">Pedir Agora</a>
-    </nav>
-  </header>
+<!-- MENU -->
+<header>
+<nav>
+<a href="#servicos">Serviços</a>
+<a href="#projetos">Projetos</a>
+<a href="#como">Como Funciona</a>
+<a href="https://wa.me/5548996045175" target="_blank">Pedir Agora</a>
+</nav>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
+<!-- HERO -->
+<section class="hero">
 
-    <div class="logo-hero">THURTECH</div>
+<div class="logo-hero">THURTECH</div>
 
-    <h1>Transformamos sua ideia em presença digital</h1>
+<h1>Transformamos sua ideia em presença digital</h1>
 
-    <p>
-      Sites modernos, artes profissionais e soluções digitais 
-      para você crescer na internet com autoridade.
-    </p>
+<p>
+Sites modernos, artes profissionais e soluções digitais para sua empresa crescer na internet.
+</p>
 
-    <a class="btn-whats" 
-       href="https://wa.me/5548996045175" 
-       target="_blank">
-       Solicitar Orçamento
-    </a>
+<a class="btn-whats" 
+href="https://wa.me/5548996045175" 
+target="_blank">
+Solicitar Orçamento
+</a>
 
-  </section>
+</section>
 
-  <!-- SERVIÇOS -->
-  <section id="servicos">
-    <h2>O que Fazemos</h2>
+<!-- SERVIÇOS -->
+<section id="servicos">
 
-    <div class="cards">
-      <div class="card">
-        <h3>Criação de Sites</h3>
-        <p>Sites modernos e responsivos.</p>
-      </div>
+<h2>O que Fazemos</h2>
 
-      <div class="card">
-        <h3>Landing Pages</h3>
-        <p>Páginas focadas em conversão.</p>
-      </div>
+<div class="cards">
 
-      <div class="card">
-        <h3>Artes Digitais</h3>
-        <p>Design profissional para redes sociais.</p>
-      </div>
-    </div>
-  </section>
+<div class="card">
+<h3>Criação de Sites</h3>
+<p>Sites modernos e responsivos.</p>
+</div>
 
-  <!-- COMO FUNCIONA -->
-  <section id="como">
-    <h2>Como Funciona</h2>
-    <p style="max-width:500px; margin:20px auto;">
-      Clique em "Solicitar Orçamento", envie sua ideia pelo WhatsApp
-      e receba rapidamente prazo e valor.
-    </p>
-  </section>
+<div class="card">
+<h3>Landing Pages</h3>
+<p>Páginas focadas em conversão.</p>
+</div>
 
-  <!-- RODAPÉ -->
-  <footer>
-    <p>© 2026 THURTECH - Todos os direitos reservados</p>
+<div class="card">
+<h3>Artes Digitais</h3>
+<p>Design profissional para redes sociais.</p>
+</div>
 
-    <div class="social">
-      <a href="https://wa.me/5548996045175" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-      </a>
+</div>
 
-      <a href="#" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-  </footer>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos">
+
+<h2>Projetos</h2>
+
+<p style="max-width:500px;margin:20px auto;color:#ccc;">
+Projetos reais e demonstrativos desenvolvidos pela THURTECH.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>SmartPay</h3>
+<p>Plataforma fintech digital.</p>
+<a class="btn-whats" href="https://arthur220303.github.io/smartpay.html/" target="_blank">
+Abrir Projeto
+</a>
+</div>
+
+<div class="card">
+<h3>ThurTech Sites</h3>
+<p>Portfólio de projetos de sites.</p>
+<a class="btn-whats" href="https://arthur220303.github.io/thurtech-sites/" target="_blank">
+Abrir Projeto
+</a>
+</div>
+
+<div class="card">
+<h3>Barbearia Modelo</h3>
+<p>Site modelo para negócios.</p>
+<a class="btn-whats" href="https://arthur220303.github.io/Barbearia-modelo/" target="_blank">
+Abrir Projeto
+</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como">
+
+<h2>Como Funciona</h2>
+
+<p style="max-width:500px;margin:20px auto;color:#ccc;">
+Clique em solicitar orçamento e envie sua ideia pelo WhatsApp.
+</p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<p>© 2026 THURTECH - Todos os direitos reservados</p>
+
+<div class="social">
+
+<a href="https://wa.me/5548996045175" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+</div>
+
+</footer>
 
 </body>
 </html>
