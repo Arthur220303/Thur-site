@@ -1,127 +1,175 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Serviços - Seu Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thurtech - Soluções Digitais. Criação de sites e serviços digitais.">
+  <title>Thurtech | Soluções Digitais</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
-}
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-nav {
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      color: white;
+      text-align: center;
+    }
 
-h1 {
-    text-align: center;
-    margin-top: 20px;
-}
+    header {
+      padding: 20px;
+      background: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-.container {
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-}
+    /* LOGO NEON */
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00ff88;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow:
+        0 0 5px #00ff88,
+        0 0 10px #00ff88,
+        0 0 20px #00ff88,
+        0 0 40px #00cc6a;
+      animation: brilho 1.5s infinite alternate;
+    }
 
-.card {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 20px;
-    border-radius: 15px;
-    margin: 20px 0;
-    backdrop-filter: blur(10px);
-}
+    @keyframes brilho {
+      from {
+        text-shadow:
+          0 0 5px #00ff88,
+          0 0 10px #00ff88,
+          0 0 20px #00ff88,
+          0 0 40px #00cc6a;
+      }
+      to {
+        text-shadow:
+          0 0 10px #00ff88,
+          0 0 20px #00ff88,
+          0 0 30px #00ff88,
+          0 0 60px #00cc6a;
+      }
+    }
 
-.card h2 {
-    margin-top: 0;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
 
-ul {
-    padding-left: 20px;
-}
+    nav a i {
+      margin-right: 6px;
+    }
 
-.buttons {
-    text-align: center;
-    margin: 30px 0;
-}
+    nav a:hover {
+      color: #00ff88;
+    }
 
-button {
-    background-color: #1da1f2;
-    border: none;
-    padding: 12px 20px;
-    margin: 5px;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
+    .hero {
+      padding: 80px 20px;
+    }
 
-button:hover {
-    opacity: 0.8;
-}
-</style>
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 30px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #00ff88;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00cc6a;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 20px;
+      background: #000;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .hero h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-    <a href="#">Home</a> |
-    <a href="#">Sobre</a> |
-    <a href="#">Serviços</a> |
-    <a href="#">Feedback</a>
-</nav>
+  <header>
+    <div class="logo">THURTECH</div>
+    <nav>
+      <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>Instagram
+      </a>
 
-<h1>Serviços</h1>
+      <a href="https://wa.me/5548996045175?text=Olá,%20vim%20pelo%20site%20da%20Thurtech%20e%20quero%20um%20orçamento." target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>WhatsApp
+      </a>
+    </nav>
+  </header>
 
-<div class="container">
+  <section class="hero">
+    <h2>Transformando Ideias em Soluções Digitais</h2>
+    <p>
+      Criamos sites modernos, artes para redes sociais e soluções digitais
+      que ajudam sua marca a crescer no ambiente online.
+    </p>
+    <a href="https://wa.me/5548996045175?text=Olá,%20vim%20pelo%20site%20da%20Thurtech%20e%20quero%20um%20orçamento." 
+       class="btn" target="_blank">
+       Solicitar Orçamento
+    </a>
+  </section>
 
-    <div class="card">
-        <h2>✨ Como pedir seu site</h2>
-        <ol>
-            <li>Entre em contato pelo WhatsApp</li>
-            <li>Explique como você quer o site</li>
-            <li>Aguarde o orçamento e desenvolvimento</li>
-            <li>Receba seu site pronto</li>
-        </ol>
-    </div>
-
-    <div class="card">
-        <h2>💼 O que oferecemos</h2>
-        <ul>
-            <li>✔ Criação de sites simples</li>
-            <li>✔ Landing pages</li>
-            <li>✔ Sites para estudo ou projeto pessoal</li>
-            <li>✔ Ajustes básicos de design</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>📌 Sobre o serviço</h2>
-        <p>
-            Criamos sites simples, modernos e organizados para quem deseja começar na internet.
-            Ideal para projetos, estudos ou pequenas apresentações online.
-        </p>
-    </div>
-
-    <div class="buttons">
-        <h2>📷 Fale conosco</h2>
-        <button onclick="window.location.href='https://wa.me/5548996045175'">WhatsApp</button>
-        <button onclick="window.location.href='https://instagram.com/'">Instagram</button>
-    </div>
-
-</div>
+  <footer>
+    © 2026 Thurtech - Todos os direitos reservados
+  </footer>
 
 </body>
 </html>
