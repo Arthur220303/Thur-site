@@ -21,33 +21,27 @@
       color: white;
     }
 
+    /* ===== MENU ===== */
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background: #111;
       position: fixed;
-      width: 100%;
       top: 0;
+      width: 100%;
+      background: #111;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
       z-index: 1000;
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      color: #00f2ff;
-      text-shadow: 0 0 5px #00f2ff,
-                   0 0 10px #00f2ff,
-                   0 0 20px #00f2ff,
-                   0 0 40px #00f2ff;
-      cursor: pointer;
+    nav {
+      display: flex;
+      gap: 20px;
     }
 
     nav a {
-      margin-left: 25px;
       text-decoration: none;
       color: white;
+      font-size: 14px;
       font-weight: bold;
       transition: 0.3s;
     }
@@ -56,44 +50,53 @@
       color: #00f2ff;
     }
 
-    section {
-      padding: 120px 40px;
-      min-height: 100vh;
-    }
-
+    /* ===== HERO ===== */
     .hero {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding-top: 120px;
+      padding-bottom: 60px;
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: 42px;
+    .logo-hero {
+      font-size: 34px;
+      font-weight: bold;
+      color: #00f2ff;
+      text-shadow: 0 0 15px #00f2ff;
       margin-bottom: 20px;
     }
 
+    .hero h1 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
     .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-      max-width: 600px;
+      font-size: 16px;
+      max-width: 500px;
+      margin: 0 auto 25px;
       color: #ccc;
     }
 
     .btn-whats {
       background: #25D366;
-      padding: 15px 30px;
+      padding: 14px 28px;
       border-radius: 8px;
       text-decoration: none;
       color: white;
       font-weight: bold;
       transition: 0.3s;
       box-shadow: 0 0 15px #25D366;
+      display: inline-block;
     }
 
     .btn-whats:hover {
       transform: scale(1.05);
+    }
+
+    /* ===== SEÇÕES ===== */
+    section {
+      padding: 60px 20px;
+      text-align: center;
     }
 
     .cards {
@@ -101,15 +104,14 @@
       gap: 20px;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 40px;
+      margin-top: 30px;
     }
 
     .card {
       background: #1a1a1a;
-      padding: 25px;
+      padding: 20px;
       border-radius: 10px;
-      width: 250px;
-      text-align: center;
+      width: 240px;
       transition: 0.3s;
     }
 
@@ -118,14 +120,16 @@
       box-shadow: 0 0 15px #00f2ff;
     }
 
+    /* ===== FOOTER ===== */
     footer {
       background: #111;
       text-align: center;
-      padding: 30px;
+      padding: 25px;
+      margin-top: 40px;
     }
 
     .social {
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     .social a {
@@ -138,13 +142,33 @@
     .social a:hover {
       color: #00f2ff;
     }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 600px) {
+      nav {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+
+      .logo-hero {
+        font-size: 28px;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
+  <!-- MENU -->
   <header>
-    <div class="logo" onclick="window.scrollTo(0,0)">THURTECH</div>
     <nav>
       <a href="#servicos">Serviços</a>
       <a href="#como">Como Funciona</a>
@@ -154,48 +178,56 @@
 
   <!-- HERO -->
   <section class="hero">
+
+    <div class="logo-hero">THURTECH</div>
+
     <h1>Transformamos sua ideia em presença digital</h1>
-    <p>Sites modernos, artes profissionais e soluções digitais 
-    para você crescer na internet com autoridade.</p>
+
+    <p>
+      Sites modernos, artes profissionais e soluções digitais 
+      para você crescer na internet com autoridade.
+    </p>
 
     <a class="btn-whats" 
        href="https://wa.me/5548996045175" 
        target="_blank">
        Solicitar Orçamento
     </a>
+
   </section>
 
   <!-- SERVIÇOS -->
   <section id="servicos">
-    <h1>O que Fazemos</h1>
+    <h2>O que Fazemos</h2>
 
     <div class="cards">
       <div class="card">
         <h3>Criação de Sites</h3>
-        <p>Sites rápidos, modernos e responsivos.</p>
+        <p>Sites modernos e responsivos.</p>
       </div>
 
       <div class="card">
         <h3>Landing Pages</h3>
-        <p>Páginas focadas em conversão e vendas.</p>
+        <p>Páginas focadas em conversão.</p>
       </div>
 
       <div class="card">
-        <h3>Artes para Redes</h3>
-        <p>Design profissional para destacar seu negócio.</p>
+        <h3>Artes Digitais</h3>
+        <p>Design profissional para redes sociais.</p>
       </div>
     </div>
   </section>
 
   <!-- COMO FUNCIONA -->
   <section id="como">
-    <h1>Como Funciona</h1>
-    <p style="margin-top:20px; max-width:600px;">
-      Clique em "Solicitar Orçamento", envie sua ideia no WhatsApp 
-      e receba rapidamente prazo e valor. Simples, direto e profissional.
+    <h2>Como Funciona</h2>
+    <p style="max-width:500px; margin:20px auto;">
+      Clique em "Solicitar Orçamento", envie sua ideia pelo WhatsApp
+      e receba rapidamente prazo e valor.
     </p>
   </section>
 
+  <!-- RODAPÉ -->
   <footer>
     <p>© 2026 THURTECH - Todos os direitos reservados</p>
 
