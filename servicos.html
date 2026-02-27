@@ -3,23 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <title>Serviços</title>
-</head>
 
-<body style="text-align:center;padding:80px;color:white;
+<style>
+body{
+text-align:center;
+padding:40px;
+color:white;
 background:linear-gradient(45deg,#0f2027,#203a43,#2c5364);
-height:90vh">
+min-height:100vh;
+font-family:Arial, sans-serif;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+.container{
+max-width:800px;
+margin:auto;
+}
+.box{
+background:rgba(255,255,255,0.1);
+padding:25px;
+margin:25px 0;
+border-radius:15px;
+backdrop-filter:blur(6px);
+}
+button{
+padding:12px 22px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+background:#00c3ff;
+color:white;
+font-weight:bold;
+}
+button:hover{
+background:#0099cc;
+}
+</style>
+
+</head>
+<body>
 
 <nav>
 <a href="index.html">Home</a> |
-<a href="sobre.html">Sobre</a> |
-<a href="servicos.html">Serviços</a>
+<a href="#como-pedir">Como pedir</a> |
+<a href="#oferecemos">O que oferecemos</a> |
+<a href="#sobre">Sobre</a> |
+<a href="feedback.html">Feedback</a>
 </nav>
 
+<div class="container">
 <h1>Serviços</h1>
 
+<div class="box" id="como-pedir">
+<h2>✨ Como pedir seu site</h2>
 <p>
-Oferecemos desenvolvimento web simples para estudos e projetos educacionais.
+1. Entre em contato pelo WhatsApp.<br>
+2. Explique como deseja o site.<br>
+3. Aguarde orçamento e desenvolvimento.<br>
+4. Receba seu site pronto.
 </p>
+</div>
 
+<div class="box" id="oferecemos">
+<h2>💼 O que oferecemos</h2>
+<p>
+✔ Criação de sites simples<br>
+✔ Landing pages<br>
+✔ Sites para estudo ou projeto pessoal<br>
+✔ Ajustes básicos de design
+</p>
+</div>
+
+<div class="box" id="sobre">
+<h2>📌 Sobre o serviço</h2>
+<p>
+A Thurtech desenvolve sites modernos e organizados para quem deseja começar na internet.
+Ideal para projetos, estudos ou apresentações online.
+</p>
+</div>
+
+<div class="box">
+<h2>📞 Contato</h2>
+<a href="https://wa.me/5548996045175" target="_blank">
+<button>WhatsApp</button>
+</a>
+<br><br>
+<button onclick="alert('Instagram será adicionado depois')">Instagram</button>
+</div>
+
+</div>
 </body>
 </html>
