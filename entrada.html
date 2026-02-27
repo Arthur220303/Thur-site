@@ -4,39 +4,75 @@
 <meta charset="UTF-8">
 <title>Thurtech</title>
 
-<meta http-equiv="refresh" content="3;url=servicos.html">
-
 <style>
+
 body{
 margin:0;
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-text-align:center;
-background:linear-gradient(45deg,#0f2027,#203a43,#2c5364);
+background:linear-gradient(135deg,#000000,#1a1a1a,#2c5364);
 color:white;
 font-family:Arial, sans-serif;
+text-align:center;
+overflow:hidden;
+}
+
+.container{
+animation:fadeIn 2s ease;
 }
 
 h1{
-font-size:60px;
-letter-spacing:5px;
+font-size:90px;
+letter-spacing:12px;
+margin-bottom:20px;
 }
 
 p{
 opacity:0.8;
+margin-bottom:40px;
+font-size:18px;
 }
+
+button{
+padding:15px 50px;
+font-size:20px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+background:#00c3ff;
+color:white;
+font-weight:bold;
+transition:0.3s;
+box-shadow:0 0 20px rgba(0,195,255,0.6);
+}
+
+button:hover{
+transform:scale(1.1);
+background:#0099cc;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(40px);}
+to{opacity:1; transform:translateY(0);}
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div>
+<div class="container">
+
 <h1>THURTECH</h1>
-<p>Desenvolvimento de sites simples e modernos</p>
-<p>Entrando...</p>
+<p>Bem-vindo ao futuro digital</p>
+
+<a href="index.html">
+<button>ACESSAR SITE</button>
+</a>
+
 </div>
 
 </body>
